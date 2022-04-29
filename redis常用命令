@@ -1,0 +1,9 @@
+redis登陆：redis-cli
+
+设置键值对：SET  {key}  {value}
+
+查看键值对：GET  {key}
+
+删除键值对：del {key}
+
+查看所有键值对：keys *
