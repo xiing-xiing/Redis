@@ -1,9 +1,37 @@
+键值对操作：
 redis登陆：redis-cli
-
 设置键值对：SET  {key}  {value}
-
 查看键值对：GET  {key}
-
 删除键值对：del {key}
-
 查看所有键值对：keys *
+
+列表操作：
+向列表头中添加元素：LPUSH {列表名}  {字符串}
+查看列表：LRANGE {列表名}  0  -1
+从列表删除并返回第一个元素：LPOP {列表名}
+向列表尾中添加元素：RPUSH {列表名}  {字符串}
+从列表删除并返回删除元素：RPOP {列表名}
+获取列表元素个数：LLEN {列表名}
+
+哈希操作：
+设置：HSET  
+查看：HGET
+查看所有：HGETALL
+删除：HDEL
+是否存在：HEXISTS 
+
+集合操作：
+添加：SADD  {集合名字}  {元素}
+查看：SMEMBERS {集合名称}
+移除：SREM {集合名称}  {值}
+
+有序集合操作：
+增加：ZADD {有序集合名} {key} {value}
+有序打印：ZRANGE {有序集合名} 0 -1  WITHSCORES
+移除：ZREM {有序集合名} {元素}
+范围查询：ZRANGEBYSCORE {有序集合名} {范围}  WITHSCORES
+
+ 
+
+
+
